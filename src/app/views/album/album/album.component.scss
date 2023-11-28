@@ -1,25 +1,15 @@
-.artist-picture-cell{
+.album-picture-cell{
     max-width: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.artist-picture-cell:hover {
+.album-picture-cell:hover {
     overflow: auto; /* Show scrollbar on hover */
     white-space: normal; /* Allow text to wrap within the cell on hover */
   }
 
-  .artist-name-cell{
-    max-width: 50px; 
-    cursor: pointer; 
-    color: black; 
-
-  &:hover {
-    color: blue;
-  }
-  }
-
-  .pagination{
-    text-align: center;
+  p{
+    font-size: larger;
   }

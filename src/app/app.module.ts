@@ -15,7 +15,9 @@ import { AppComponent } from './app.component';
 // Import containers
 import { DefaultFooterComponent, DefaultHeaderComponent, DefaultLayoutComponent } from './containers';
 
+
 import {
+  TableModule,
   AvatarModule,
   BadgeModule,
   BreadcrumbModule,
@@ -39,6 +41,10 @@ import {
 import { IconModule, IconSetService } from '@coreui/icons-angular';
 import { ArtistComponent } from './views/artist/artist.component';
 import { CategoryComponent } from './views/category/category.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HttpClientModule } from '@angular/common/http';
+import { AlbumComponent } from './views/album/album/album.component';
+
 
 const APP_CONTAINERS = [
   DefaultFooterComponent,
@@ -47,8 +53,11 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS, ArtistComponent, CategoryComponent],
+  declarations: [AppComponent, ...APP_CONTAINERS, ArtistComponent, CategoryComponent, AlbumComponent],
   imports: [
+    HttpClientModule,
+    TableModule,
+    NgxPaginationModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

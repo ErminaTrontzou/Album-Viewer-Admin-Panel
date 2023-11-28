@@ -1,1 +1,29 @@
-<p>artist works!</p>
+<div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Artist Table</h4>
+        <table class="table">
+          <thead cTableColor="dark">
+            <tr>
+              <th>ID</th>
+              <th>Artist Name</th>
+              <th class="picture">Artist Picture</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let artist of artists | paginate: { itemsPerPage: pageSize, currentPage: page }">
+              <td>{{ artist.id }}</td>
+              <td class="artist-name-cell" (click)="goToAlbums(artist.id, artist.name)"><u>{{ artist.name }}</u></td>
+              <td class="artist-picture-cell">{{artist.picture}}</td>
+              <td>Nothing yet</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="text-center">
+        <pagination-controls (pageChange)="page = $event"></pagination-controls>
+      </div>
+  </div>
+

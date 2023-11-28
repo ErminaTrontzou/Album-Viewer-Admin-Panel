@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './containers';
 import { ArtistComponent } from './views/artist/artist.component';
 import { CategoryComponent } from './views/category/category.component';
+import { AlbumComponent } from './views/album/album/album.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'category',
         component: CategoryComponent
+      },
+      {
+        path: 'album/:id/:artistName',
+        component: AlbumComponent
       }
     ]
   },
