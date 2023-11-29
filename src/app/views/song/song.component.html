@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Songs Table of Album {{ albumName }} from {{ artistName }}</h4>
+        <table class="table">
+          <thead cTableColor="dark">
+            <tr>
+              <th>ID</th>
+              <th>Album ID</th>
+              <th>Name</th>
+              <th>Duration</th>
+              <th>Position</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let song of songs">
+              <td>{{ song.id }}</td>
+              <td>{{ song.albumId }}</td>
+              <td>{{ song.name }}</td>
+              <td>{{ song.duration }}</td>
+              <td>{{ song.position }}</td>
+              <td>Nothing yet</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+  

@@ -3,24 +3,23 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
+
 @Injectable({
   providedIn: 'root'
 })
-export class AlbumService { 
-
-  private apiUrl = 'http://localhost:8080/api/v1/album/artist_id/';
+export class CategoryService {
+  private apiUrl = 'http://localhost:8080/api/v1/genre';
 
   constructor(private http: HttpClient) { }
 
-  getAlbumByArtistId(artistId: number): Observable<any[]> {
-    const url = `${this.apiUrl}${artistId}`;
-    return this.http.get<any[]>(url).pipe(
+  getCategories(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl).pipe(
       catchError((error) => {
         if (error.status === 0) {
-          console.error('Problem with obtaining Albums from backend');
+          console.error('Problem with obtaining Categories from backend');
         }
         return throwError(error);
       })
-    )
+    );
   }
 }

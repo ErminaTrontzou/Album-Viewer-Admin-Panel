@@ -1,1 +1,26 @@
-<p>category works!</p>
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Categories Table</h4>
+      <table class="table">
+        <thead cTableColor="dark">
+          <tr>
+            <th>ID</th>
+            <th>Category Name</th>
+            <th class="picture">Category Picture</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let category of categories">
+            <td>{{ category.id }}</td>
+            <td class="category-name-cell" >{{ category.name }}</td>
+            <td class="category-picture-cell">{{category.picture}}</td>
+            <td>Nothing yet</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

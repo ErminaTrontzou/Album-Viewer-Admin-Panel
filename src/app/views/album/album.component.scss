@@ -10,6 +10,17 @@
     white-space: normal; /* Allow text to wrap within the cell on hover */
   }
 
+  .album-name-cell{
+    max-width: 50px; 
+    cursor: pointer; 
+    color: black; 
+
+  &:hover {
+    color: blue;
+  }
+  }
+
+
   p{
     font-size: larger;
   }

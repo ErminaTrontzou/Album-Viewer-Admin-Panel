@@ -23,7 +23,7 @@
               <td>{{ album.id }}</td>
               <td>{{ album.artistId }}</td>
               <td>{{ album.genreId }}</td>
-              <td>{{ album.name }}</td>
+              <td class="album-name-cell" (click)="goToAlbumSongs(album.id, artistName, album.name)"><u>{{ album.name }}</u></td>
               <td>{{ album.releaseDate }}</td>
               <td class="album-picture-cell">{{ album.imagePath }}</td>
               <td>Nothing yet</td>

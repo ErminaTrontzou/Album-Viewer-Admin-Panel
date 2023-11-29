@@ -1,7 +1,8 @@
 // album.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AlbumService } from '../../../service/album/album.service';
+import { AlbumService } from '../../service/album/album.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-album',
@@ -16,7 +17,8 @@ export class AlbumComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private albumService: AlbumService
+    private albumService: AlbumService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -39,5 +41,9 @@ export class AlbumComponent implements OnInit {
         this.albumErrorMessage = 'Problem with obtaining Albums from backend';
       }
     );
+  }
+
+  goToAlbumSongs(albumId: number, artistName: string ,albumName: string): void {
+    this.router.navigate(['/song', albumId,  artistName, albumName]);
   }
 }

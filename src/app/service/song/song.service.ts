@@ -6,18 +6,17 @@ import { catchError } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class AlbumService { 
-
-  private apiUrl = 'http://localhost:8080/api/v1/album/artist_id/';
-
+export class SongService {
+  private apiUrl = 'http://localhost:8080/api/v1/song/specific-album/'
+  
   constructor(private http: HttpClient) { }
 
-  getAlbumByArtistId(artistId: number): Observable<any[]> {
-    const url = `${this.apiUrl}${artistId}`;
+  getSongsFromAlbum(albumId: number): Observable<any[]> {
+    const url = `${this.apiUrl}${albumId}`;
     return this.http.get<any[]>(url).pipe(
       catchError((error) => {
         if (error.status === 0) {
-          console.error('Problem with obtaining Albums from backend');
+          console.error('Problem with obtaining Songs from backend');
         }
         return throwError(error);
       })

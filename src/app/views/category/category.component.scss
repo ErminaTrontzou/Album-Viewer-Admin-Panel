@@ -1,0 +1,12 @@
+.category-picture-cell{
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.category-picture-cell:hover {
+    overflow: auto; /* Show scrollbar on hover */
+    white-space: normal; /* Allow text to wrap within the cell on hover */
+  }
+

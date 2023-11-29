@@ -43,7 +43,8 @@ import { ArtistComponent } from './views/artist/artist.component';
 import { CategoryComponent } from './views/category/category.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
-import { AlbumComponent } from './views/album/album/album.component';
+import { AlbumComponent } from './views/album/album.component';
+import { SongComponent } from './views/song/song.component';
 
 
 const APP_CONTAINERS = [
@@ -53,7 +54,7 @@ const APP_CONTAINERS = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ...APP_CONTAINERS, ArtistComponent, CategoryComponent, AlbumComponent],
+  declarations: [AppComponent, ...APP_CONTAINERS, ArtistComponent, CategoryComponent, AlbumComponent, SongComponent],
   imports: [
     HttpClientModule,
     TableModule,
