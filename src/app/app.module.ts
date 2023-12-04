@@ -45,6 +45,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { HttpClientModule } from '@angular/common/http';
 import { AlbumComponent } from './views/album/album.component';
 import { SongComponent } from './views/song/song.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 const APP_CONTAINERS = [
@@ -57,6 +59,7 @@ const APP_CONTAINERS = [
   declarations: [AppComponent, ...APP_CONTAINERS, ArtistComponent, CategoryComponent, AlbumComponent, SongComponent],
   imports: [
     HttpClientModule,
+    FontAwesomeModule,
     TableModule,
     NgxPaginationModule,
     BrowserModule,
