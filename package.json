@@ -1,7 +1,7 @@
 {
   "name": "coreui-free-angular-admin-template",
   "version": "4.5.27",
-  "copyright": "Copyright 2023 creativeLabs Łukasz Holeczek",
+  "copyright": "Ermina Trontzou",
   "license": "MIT",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people) and contributors",
   "homepage": "https://coreui.io/angular",
@@ -35,7 +35,7 @@
     "@coreui/icons": "^3.0.1",
     "@coreui/icons-angular": "~4.5.27",
     "@coreui/utils": "^2.0.2",
-    "@fortawesome/angular-fontawesome": "^0.14.0",
+    "@fortawesome/angular-fontawesome": "^0.13.0",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "chart.js": "^3.9.1",

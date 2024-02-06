@@ -1,1 +1,16 @@
-<h1>Welcome</h1>
+<div class="card mt-4">
+  <div class="card-body" style="height: 70vh;"> <!-- Set height to 70% of viewport height -->
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center align-items-start">
+              <div style="height: 400px; width: 400px;">
+                  <h4 class="card-title">Albums by Artist</h4>
+                  <c-chart 
+                      [data]="{ labels: pieChartLabels, datasets: [{ data: pieChartData, backgroundColor: ['#FF6384', '#4BC0C0', '#FFCE56', '#E7E9ED', '#36A2EB'] }] }" 
+                      type="doughnut"
+                      [options]="{ plugins: { legend: { display: false } } }"
+                  ></c-chart>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
