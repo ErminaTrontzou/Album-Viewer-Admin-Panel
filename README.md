@@ -5,6 +5,10 @@ The Album Viewer Admin Panel is an administrative dashboard designed to manage t
 
 Future enhancements include a full CRUD system, interactive action buttons for creating, editing, and deleting entries, and an authentication system for secure user management.
 
+## Project Parts
+- [**Album Viewer**](https://github.com/ErminaTrontzou/Album-Viewer-Frontend/tree/main)
+- [**Album Viewer Backend**](https://github.com/ErminaTrontzou/Album-Viewer-Backend)
+
 # Demo
 > Add link for live demo
 
@@ -43,4 +47,4 @@ The application is structured using Angular's modular approach, ensuring a clean
 ![Project Structure](https://i.imgur.com/hgf8wY1.png)
 
 ## License
-The Album Viewer Site is licensed under the MIT license, promoting open-source collaboration and reuse.
+The Album Viewer Site is licensed under the [MIT license](LICENSE), promoting open-source collaboration and reuse.
