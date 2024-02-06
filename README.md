@@ -20,7 +20,7 @@ Future enhancements include a full CRUD system, interactive action buttons for c
 - **Category Overview**: Lists all categories for easy navigation and management.
 - **Responsive Design**: Accessible on any device, offering a seamless user experience whether you're on mobile or desktop.
 
-##Future Plan
+## Future Plan
   - **CRUD System**: Implement a complete system for creating, reading, updating, and deleting entries.
   - **Action Buttons**: Add interactive buttons for performing CRUD operations.
   - **Login System**: Introduce authentication to secure access to the admin panel.
